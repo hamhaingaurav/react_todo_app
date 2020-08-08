@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body{
+    background: linear-gradient(to right, #202020, #646464);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#task-container{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-top: 100px;
+    margin-bottom:100px;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#form-wrapper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0rem;
+    border-bottom: 1px solid #e9a9e9;
+    background-color: #fff;
+    padding: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#submit{
+    background-color: #36d9b6;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-wrapper{
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-wrapper:hover{
+    background-color: #f0f0f0;
+}
+
+#list-wrapper ul{
+    list-style: none;
+}
+
+#list-wrapper button{
+    float: right;
+    margin-right: 30px;
+}
+
+#list-wrapper{
+    height: 1.9rem;
 }
